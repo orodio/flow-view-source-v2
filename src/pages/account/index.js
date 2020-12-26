@@ -1,5 +1,8 @@
+import {useParams} from "react-router-dom"
+
 export function Page() {
-  return <div>Page: account</div>
+  const {address} = useParams()
+  return <div>Page: account {address}</div>
 }
 
 export default function WrappedPage(props) {
